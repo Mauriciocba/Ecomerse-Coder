@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gwendolyn&family=Rajdhani&family=Raleway:ital,wght@1,200&family=Readex+Pro:wght@200&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*HEDER*/
+.contenedor-heder{
+    width: 100%;
+	height: 85vh;
+    background-image: url(../img/playa-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*TEXTO DE LA CABECERA*/
+.contenedor-heder .texto {
+    width: calc(100vw - 20px);
+    height: 20vh;
+    font-size: 90px;
+    font-weight: 900;
+    font-family: 'Raleway';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    mix-blend-mode: multiply;
+    
+}
+
+/*MENU Y ENLACES DE NVAR*/
+.menu{   
+    background-color:  rgb(30, 132, 73);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    font-family: 'Releway';
+    font-style: italic;
+}
+.menu a {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 30px;
+    background-color: rgb(30, 132, 73);
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu a:hover{
+    transform: translateY(18px);
+    background-color: rgb( 40, 180, 99);
+}
+
+/*NOSOTROS QUIENES SOMOS TITULOS Y SUBTITULO*/
+.nosotros{
+    margin-bottom:  60px;
+}
+
+.subtitulo{
+    font-size: 20px;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+
+.subtitulo span{
+    background-color: rgb(255, 159, 124);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+    border-radius: 100px;
+}
+
+.subtitulo::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 159, 124);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+.titulo{
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+    font-family: "Readex Pro";
+}
+
+.nosotros .titulo{
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.nosotros .enlace{
+    display: inline-block;
+    margin-top: 40px;
+    color: crimson;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease all;
+}
+
+.nosotros .enlace:hover{
+   text-decoration: none;
+   letter-spacing: 3px;
+   border-bottom:  1px solid rgb(253, 28, 73);
+}
+
+
+
+/*PRODUCTOS*/
+
+.productos{
+    background-color: rgb( 52, 73, 94 );
+    padding: 90px;
+    margin-bottom: 60px;
+    color: rgb(224, 233, 240);
+}
+.productos img{
+    transition: .3s ease all;
+}
+
+.productos img:hover{
+    transform: scale(1.2);
+}
+
+
+/*SEPARADOR*/
+.separador{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/separador.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.separador p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Releway";
+    padding: 10px;
+    color: rgb(240, 229, 229);
+    border: 100px;
+}
+
+
+/*REDES*/
+.redes{
+    padding: 18px;
+    background-color: rgb(30, 132, 73);
+}
+
+.redes img{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition:  .3s ease all;
+
+}
+
+.redes img:hover{
+    transform: scale(1.2);
+}
